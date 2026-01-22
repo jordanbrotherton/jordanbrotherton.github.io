@@ -1,0 +1,37 @@
+/* You fell deeper into the 404, finding the CSS!
+Don't worry, it's fairly easy to head back.
+While you're here enjoy the sights of the slightly changed colors!
+*/
+
+/* Color Variables */
+:root {
+    --accent-blue: #ff5656;
+
+    --bg-base-1: #ffdcdc;
+    --bg-base-2: #ffadad;
+
+    --bg-card: #ffc5c5;
+    --border-card: #7c3535;
+    --border-green: #411313;
+
+    --text: #3d1a1a;
+}
+
+/* Dark theme to relax your eyes! */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-base-1: #330f0f;
+        --bg-base-2: #611515;
+
+        --bg-card: #7c3535;
+        --border-card: #ffc5c5;
+
+        --text: #ffe6e6;
+    }
+
+    body {
+        color: white;
+    }
+}
+
+/* You reached the end! Thanks for reading (or scrolling) again! :) */

@@ -1,44 +1,135 @@
-<html>
-    <head>
-        <title>Jordan Brotherton</title>
+<!DOCTYPE html>
+<html lang="en">
 
-        <link href="Assets/favicon_l.ico" rel="icon" media="(prefers-color-scheme: light)" />
-        <link href="Assets/favicon_d.ico" rel="icon" media="(prefers-color-scheme: dark)" />
-        <link rel="apple-touch-icon" href="Assets/mobile_icon.png">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#b3d9ff">
-        <meta charset="utf-8">
-        <meta property="og:title" content="Jordan Brotherton" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="index.html" />
-        <meta property="og:image" content="Assets/logo.png" />
-        <meta property="og:description" content="" />
-        <meta name="description" content="" />
-    </head>
+<head>
+    <!-- 
+                You stumbled onto the HTML!
+                Nice job, have an ASCII logo for your troubles!
 
-    <body>
-        <div class="container">
-            <div id="logo" class="box">
-                <a href="https://www.github.com/jordanbrotherton"/>
-                    <picture>
-                        <!-- Dark Logo -->
-                        <source width="350pt" srcset="Assets/logo.svg">
-                        <!-- Fallback Logo -->
-                        <img width="350pt" alt="Stylized logo that says Jordan" src="logo.png">
-                    </picture>
-                </a>
+                ██  ██  ██
+                ██  ██  ██
+                    ██    
+                    ██    
+            
+                    ██    
+                    ██    
+                    ██    
+                ████      
+    -->
+
+    <!-- Favicon/Touch Icon -->
+    <link href="assets/favicon.ico" rel="icon" />
+    <link rel="apple-touch-icon" href="assets/touch_icon.png">
+
+    <title>Jordan Brotherton</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0095ff">
+    <meta charset="utf-8">
+
+    <!-- Embed Information -->
+    <meta property="og:title" content="Jordan Brotherton" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image"
+        content="https://github.com/jordanbrotherton/jordanbrotherton.github.io/blob/master/assets/opengraph.png?raw=true" />
+    <meta property="og:description" content="Wanting to make tech fun for anyone." />
+    <meta name="description" content="Wanting to make tech fun for anyone." />
+</head>
+
+<body>
+    <header>
+        <p>
+            <a href="https://github.com/jordanbrotherton">
+                <img alt="Title" src="./assets/logo.svg">
+            </a>
+        </p>
+    </header>
+
+    <h1>Projects</h1>
+    <div class="projects-container">
+
+        <div class="project">
+            <div class="project-image-container">
+                <img src="https://github.com/jordanbrotherton/EFISwapper/raw/main/icons/win.svg"
+                    alt="EFISwapper Icon" />
             </div>
-            <div class="box">
-                <h1>Languages:</h1>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                </ul>
+            <div class="project-desc-container">
+                <h2>EFISwapper</h2>
+                <p>A helper script to better dual-boot Linux and Windows by generating desktop shortcuts to switch
+                    operating systems.</p>
+                <a class="button" href="https://github.com/jordanbrotherton/EFISwapper">View the Repository</a>
             </div>
         </div>
-    </body>
+
+        <div class="project">
+            <div class="project-desc-container">
+                <h2>Property Aggregator</h2>
+                <p>A React/NEXT.JS tool to navigate through Alachua County's property tax information. Created with a
+                    group for Data
+                    Structures & Algorithm class.</p>
+                <a class="button"
+                    style="background-color: var(--accent-green); color: #000000; border-color: var(--border-green);"
+                    href="https://jordanbrotherton.github.io/Property-Aggregator/">Use the Tool</a>
+                <a class="button" href="https://github.com/jordanbrotherton/Property-Aggregator">View the
+                    Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image-container">
+                <img src="./assets/icons/habitthing_icon.png" alt="HabitThing Icon" />
+            </div>
+            <div class="project-desc-container">
+                <h2>HabitThing</h2>
+                <p>Keep track of your tasks and get hats along with it! Team submission for UFOSC Mini-Hack.</p>
+                <a class="button" href="https://github.com/jordanbrotherton/HabitThing">View the Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image-container">
+                <img src="./assets/icons/tumble_icon.png" alt="Tumble Icon" />
+            </div>
+            <div class="project-desc-container">
+                <h2>Tumble</h2>
+                <p>An Android launcher experiment that turns your homescreen into a feed.</p>
+                <a class="button" href="https://github.com/jordanbrotherton/Tumble">View the Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-image-container">
+                <img src="./assets/icons/fp_icon.png" alt="Flake Project Logo" />
+            </div>
+            <div class="project-desc-container">
+                <h2>Flake Project</h2>
+                <p>My game development project. Currently working on a 2D puzzle-platformer.</p>
+                <a class="button" href="https://flake-project.itch.io">View on itch.io</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-desc-container">
+                <h2>TERMINALMONOPOLY (Contributor)</h2>
+                <p>Contributed to this UFOSC project. Helped to modularize assets and create initial Casino module
+                    format.
+                </p>
+                <a class="button" href="https://github.com/ufosc/TERMINALMONOPOLY">View the Repository</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- You reached the end it seems. Hope you enjoyed the source code! -->
+
 </html>
