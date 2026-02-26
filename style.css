@@ -147,6 +147,12 @@ a {
     justify-content: center;
 }
 
+@media (max-width: 500px) {
+    header img{
+        width: 80vw;
+    }
+}
+
 @media (min-width: 700px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
