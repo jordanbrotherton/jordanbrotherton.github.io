@@ -58,10 +58,11 @@ html {
 /* General Attributes */
 body {
     text-align: center;
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     margin: 0;
     transition: all 0.5s;
     text-transform: lowercase;
+    animation: squiggle 0.5s ease-in-out infinite alternate;
 }
 
 header {
@@ -78,7 +79,7 @@ header img {
 }
 
 h1 {
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     font-size: 1.5em;
 
     width: fit-content;
@@ -89,7 +90,7 @@ h1 {
 h2 {
     margin-top: 10px;
     margin-bottom: 5px;
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     font-size: 3em;
     word-break: break-word;
 }
@@ -97,13 +98,13 @@ h2 {
 h3 {
     margin-top: 20px;
     margin-bottom: 5px;
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     font-size: 1.5em;
 }
 
 p {
     margin-top: 0px;
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
 }
@@ -113,7 +114,7 @@ a {
     display: inline-block;
     position: relative;
     margin-top: 0px;
-    font-family: 'Inter Tight';
+    font-family: 'Inter Tight', 'Arial', sans-serif;
     font-weight: semi-bold;
     font-size: 1.5em;
     font-weight: 500;
