@@ -22,7 +22,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <!-- Theme -->
@@ -37,10 +37,34 @@
 </head>
 
 <body>
+    <!-- Image Squiggle -->
+    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence baseFrequency="0.02" numOctaves="4" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Background Animation -->
+    <svg class="bg-squiggles" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M-10 10 Q 25 0, 50 10 T 110 10" />
+        <path d="M-10 30 Q 25 20, 50 30 T 110 30" />
+        <path d="M-10 50 Q 25 40, 50 50 T 110 50" />
+        <path d="M-10 70 Q 25 60, 50 70 T 110 70" />
+        <path d="M-10 90 Q 25 80, 50 90 T 110 90" />
+    </svg>
+
+    <!-- The Treachery of Websites -->
     <div style="display: grid; align-items: center; justify-content:center; height: 100vh;">
-        <div class="project" style="max-width: 500px; height: 300px;">
+        <div class="project" style="max-width: 500px; height: 300px; flex-direction: column; padding: 10px;">
             <h2>This is not a page.<br />404</h2>
-            <a class="button" href="index.html">Head back!</a>
+            <a href="index.html">Head back!</a>
         </div>
     </div>
 </body>

@@ -26,7 +26,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
     <!-- Theme -->
@@ -41,145 +41,193 @@
     <meta property="og:url" content="index.html" />
     <meta property="og:image"
         content="https://github.com/jordanbrotherton/jordanbrotherton.github.io/blob/master/assets/opengraph.png?raw=true" />
-    <meta property="og:description" content="Wanting to make tech fun for anyone." />
-    <meta name="description" content="Wanting to make tech fun for anyone." />
+    <meta property="og:description" content="CS student @ UF / Systems & Games" />
+    <meta name="description" content="CS student @ UF / Systems & Games" />
 </head>
 
 <body>
+    <!-- Image Squiggle -->
+    <svg style="position: absolute; width: 0; height: 0; visibility: hidden;">
+        <defs>
+            <filter id="squiggly-0">
+                <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="0" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+            </filter>
+            <filter id="squiggly-1">
+                <feTurbulence baseFrequency="0.02" numOctaves="4" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="4" />
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Background Animation -->
+    <svg class="bg-squiggles" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M-10 10 Q 25 0, 50 10 T 110 10" />
+        <path d="M-10 30 Q 25 20, 50 30 T 110 30" />
+        <path d="M-10 50 Q 25 40, 50 50 T 110 50" />
+        <path d="M-10 70 Q 25 60, 50 70 T 110 70" />
+        <path d="M-10 90 Q 25 80, 50 90 T 110 90" />
+    </svg>
+
+    <!-- The Big Blue Header -->
     <header>
         <p>
-            <a href="https://github.com/jordanbrotherton">
-                <img alt="Title" src="./assets/logo.svg">
-            </a>
+            <img alt="Jordan Wordmark" src="./assets/logo.svg">
         </p>
+        <h1 style="color: white;">CS student @ UF / Systems & Games</h1>
+        <nav style="padding-bottom: 10px;">
+            <a href="https://github.com/jordanbrotherton" target="_blank" style="color: white;">GitHub</a>
+            <a href="https://www.linkedin.com/in/jbrotherton/" target="_blank" style="color: white;">LinkedIn</a>
+            <a href="https://flake-project.itch.io/" target="_blank" style="color: white;">Itch.io</a>
+        </nav>
     </header>
-    
+
+    <!-- The featured projects get neat colored cards and icons! -->
+
+    <!-- The Good Stuff -->
+    <div class="category">
+        <h2>Featured Apps & Tools</h2>
+    </div>
+
+    <div class="projects-container">
+
+        <div class="project" style="background-color: var(--arborist-bg);">
+            <div class="project-image-container">
+                <img src="./assets/icons/arborist.svg" alt="Arborist Icon" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: var(--arborist-fg);">Arborist</h2>
+                <h3 style="color: white;">(Python + GTK)</h3>
+                <p style="color: white;">GUI for atomic deployment management tools such as rpm-ostree</p>
+                <a style="color: var(--arborist-fg);"
+                    href="https://github.com/jordanbrotherton/Arborist/releases/">Download</a>
+                <a style="color: var(--arborist-fg);" href="https://github.com/jordanbrotherton/Arborist">Repository</a>
+            </div>
+        </div>
+
+        <div class="project" style="background-color: white;">
+            <div class="project-image-container">
+                <img src="./assets/icons/sketchpad.svg" alt="Sketchpad Icon" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: var(--accent-blue);">Sketchpad</h2>
+                <h3 style="color: black;">(Godot) (Current Technical Lead for UFOSC)</h3>
+                <p style="color: black;">Simple lo-fi animation tool made with Godot Engine</p>
+                <a style="color: var(--accent-blue);" href="https://ufosc.github.io/Sketchpad/">Use Online</a>
+                <a style="color: var(--accent-blue);" href="https://github.com/ufosc/Sketchpad">Repository</a>
+            </div>
+        </div>
+
+        <div class="project" style="background-color: #333436;">
+            <div class="project-image-container">
+                <img src="./assets/icons/dcatag.svg" alt="Double Click Activities to App Grid Icon" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: white;">Double Click Activities to App Grid</h2>
+                <h3 style=" color: white;">(GJS)</h3>
+                <p style="color: white;">GNOME extension to open the app grid by double clicking the activities button
+                </p>
+                <a style="color: white;"
+                    href="https://extensions.gnome.org/extension/9339/double-click-activities-to-app-grid/">Download
+                    on EGO</a>
+                <a style="color: white;"
+                    href="https://github.com/jordanbrotherton/gnome-doubleclick-appgrid">Repository</a>
+            </div>
+        </div>
+
+        <div class="project" style="background-color: var(--coolbot-bg);">
+            <div class="project-image-container">
+                <img src="./assets/icons/coolbot.svg" alt="CoolBot Avatar" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: var(--coolbot-fg);">CoolBot</h2>
+                <h3 style="color: black;">(C# + NetCord)</h3>
+                <p style="color: black;">A fun little bot made for small Discord servers</p>
+                <a style="color: var(--coolbot-fg);" href="https://github.com/jordanbrotherton/CoolBot">Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Fun Stuff -->
+    <div class="category">
+        <h2>Featured Games</h2>
+    </div>
+
+    <div class="projects-container">
+        <div class="project" style="background-color: var(--gdr-bg);">
+            <div class="project-image-container">
+                <img src="./assets/icons/gdr.svg" alt="Hat from Gear De Rail" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: var(--gdr-fg);">Gear De Rail</h2>
+                <h3 style="color: white;">(Godot) (Team Submission for Digital Worlds Jam)</h3>
+                <p style="color: white;">Speed platformer about derailing a train</p>
+                <a style="color: var(--gdr-fg);" href="https://pikacool150.itch.io/gear-de-rail">Play</a>
+            </div>
+        </div>
+
+        <div class="project" style="background-color: var(--ssb-bg);">
+            <div class="project-image-container">
+                <img src="./assets/icons/ssb.svg" alt="The ball from Super Sphere Ball" />
+            </div>
+            <div class="project-desc-container">
+                <h2 class="project-title" style="color: var(--ssb-fg);">Super Sphere Ball</h2>
+                <h3 style="color: black;">(Unity)</h3>
+                <p style="color: black;">A game about rolling a ball through challenging courses</p>
+                <a style="color: var(--ssb-fg);"
+                    href="https://github.com/jordanbrotherton/SphereRoller/releases/tag/v1.1">Download</a>
+                <a style="color: var(--ssb-fg);" href="https://github.com/jordanbrotherton/SphereRoller">Repository</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Neat Stuff -->
+    <!-- Stuff that don't have as much of an emphasis, so they're neutral in design. -->
+    <div class="category">
+        <h2>Other Projects</h2>
+    </div>
+
     <div class="projects-container">
 
         <div class="project">
-            <div class="project-image-container">
-                <img src="https://github.com/jordanbrotherton/Arborist/raw/main/data/icons/hicolor/scalable/apps/io.github.jordanbrotherton.arborist.svg"
-                    alt="Arborist Icon" />
-            </div>
             <div class="project-desc-container">
-                <h2>Arborist</h2>
-                <p>GTK-based GUI for atomic deployment management tools such as rpm-ostree.</p>
-                <a class="button"
-                    style="background-color: var(--accent-green); color: #000000; border-color: var(--border-green);"
-                    href="https://github.com/jordanbrotherton/Arborist/releases/">Download</a>
-                <a class="button" href="https://github.com/jordanbrotherton/Arborist">View the Repository</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-image-container">
-                <img src="https://github.com/ufosc/Sketchpad/raw/main/assets/base_ux/icon_128.png"
-                    alt="Sketchpad Icon" />
-            </div>
-            <div class="project-desc-container">
-                <h2>Sketchpad (for UFOSC)</h2>
-                <p>Current Technical Lead. Animate like it's 2009! A simple Lo-Fi animation tool made using the Godot
-                    Engine.</p>
-                <a class="button"
-                    style="background-color: var(--accent-green); color: #000000; border-color: var(--border-green);"
-                    href="https://ufosc.github.io/Sketchpad/">Use Online</a>
-                <a class="button" href="https://github.com/ufosc/Sketchpad">View the Repository</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-image-container">
-                <img src="https://github.com/jordanbrotherton/EFISwapper/raw/main/icons/win.svg"
-                    alt="EFISwapper Icon" />
-            </div>
-            <div class="project-desc-container">
-                <h2>EFISwapper</h2>
-                <p>A helper script to better dual-boot Linux and Windows by generating desktop shortcuts to switch
-                    operating systems.</p>
-                <a class="button" href="https://github.com/jordanbrotherton/EFISwapper">View the Repository</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-image-container">
-                <img src="https://raw.githubusercontent.com/alexyzhao24/OJJ/main/client/src/assets/venture-logo-small.png"
-                    alt="Venture Icon" />
-            </div>
-            <div class="project-desc-container">
-                <h2>Venture</h2>
-                <p>Developed in a group for Introduction to Software Engineering. React/Express tool to keep track of
-                    tasks and compete with your friends in productivity!</p>
-                <a class="button" href="https://github.com/alexyzhao24/OJJ">View the
-                    Repository</a>
+                <h2 class="project-title">EFISwapper</h2>
+                <h3>(Bash + Batch)</h3>
+                <p>Simplify dual-booting Linux and Windows through desktop shortcuts</p>
+                <a href="https://github.com/jordanbrotherton/EFISwapper">Repository</a>
             </div>
         </div>
 
         <div class="project">
             <div class="project-desc-container">
-                <h2>Property Aggregator</h2>
-                <p>A React/NEXT.JS tool to navigate through Alachua County's property tax information. Created with a
-                    group for Data
-                    Structures & Algorithm class.</p>
-                <a class="button"
-                    style="background-color: var(--accent-green); color: #000000; border-color: var(--border-green);"
-                    href="https://jordanbrotherton.github.io/Property-Aggregator/">Use the Tool</a>
-                <a class="button" href="https://github.com/jordanbrotherton/Property-Aggregator">View the
-                    Repository</a>
+                <h2 class="project-title">Venture</h2>
+                <h3>(React + Express + Vite) (Group Intro to SWE Project)</h3>
+                <p>Collaborative online productivity portal to track task completion</p>
+                <a href="https://github.com/alexyzhao24/OJJ">Repository</a>
             </div>
         </div>
 
         <div class="project">
-            <div class="project-image-container">
-                <img src="./assets/icons/habitthing_icon.png" alt="HabitThing Icon" />
-            </div>
             <div class="project-desc-container">
-                <h2>HabitThing</h2>
-                <p>Keep track of your tasks and get hats along with it! Team submission for UFOSC Mini-Hack.</p>
-                <a class="button" href="https://github.com/jordanbrotherton/HabitThing">View the Repository</a>
+                <h2 class="project-title">Property Aggregator</h2>
+                <h3>(React + NEXT.JS) (Group DSA Project)</h3>
+                <p>Compare time complexities through Alachua County's property tax information</p>
+                <a href="https://jordanbrotherton.github.io/Property-Aggregator/">Use Online</a>
+                <a href="https://github.com/jordanbrotherton/Property-Aggregator">Repository</a>
             </div>
         </div>
 
         <div class="project">
-            <div class="project-image-container">
-                <img src="https://github.com/jordanbrotherton/gnome-doubleclick-appgrid/raw/main/assets/icon.png"
-                    alt="Double Click Activities to App Grid Icon" />
-            </div>
             <div class="project-desc-container">
-                <h2>Double Click Activities to App Grid</h2>
-                <p>GNOME Shell extension that opens the application grid by double clicking the activities button
-                    similarly to the super key.</p>
-                <a class="button"
-                    style="background-color: var(--accent-green); color: #000000; border-color: var(--border-green);"
-                    href="https://extensions.gnome.org/extension/9339/double-click-activities-to-app-grid/">Download on
-                    EGO</a>
-                <a class="button" href="https://github.com/jordanbrotherton/gnome-doubleclick-appgrid">View the
-                    Repository</a>
+                <h2 class="project-title">HabitThing</h2>
+                <h3>(Godot) (UFOSC Mini-Hack Team Submission)</h3>
+                <p>Gamified habit tracker where you can get hats for focusing</p>
+                <a href="https://github.com/jordanbrotherton/HabitThing">Repository</a>
             </div>
         </div>
-
-        <div class="project">
-            <div class="project-image-container">
-                <img src="https://github.com/jordanbrotherton/CoolBot/raw/main/Assets/icon.png" alt="CoolBot Avatar" />
-            </div>
-            <div class="project-desc-container">
-                <h2>CoolBot</h2>
-                <p>A fun little bot made for small Discord servers that provides a grab-bag of modules to use.</p>
-                <a class="button" href="https://github.com/jordanbrotherton/CoolBot">View the Repository</a>
-            </div>
-        </div>
-
-        <div class="project">
-            <div class="project-image-container">
-                <img src="./assets/icons/fp_icon.png" alt="Flake Project Logo" />
-            </div>
-            <div class="project-desc-container">
-                <h2>Flake Project</h2>
-                <p>My game development project. Currently working on a 2D puzzle-platformer.</p>
-                <a class="button" href="https://flake-project.itch.io">View on itch.io</a>
-            </div>
-        </div>
-
     </div>
+
+    <!-- Perhaps something at the bottom... another day. -->
 </body>
 
 <!-- You reached the end it seems. Hope you enjoyed the source code! -->
