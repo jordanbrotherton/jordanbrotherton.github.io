@@ -62,7 +62,6 @@ body {
     margin: 0;
     transition: all 0.5s;
     text-transform: lowercase;
-    animation: squiggle 0.5s ease-in-out infinite alternate;
 }
 
 header {
